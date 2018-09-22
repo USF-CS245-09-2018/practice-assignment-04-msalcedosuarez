@@ -164,8 +164,10 @@ public class Practice04Test {
 		for (String algo : algorithms) {
 			try {
 				SortingAlgorithm sort = factory.getSortingAlgorithm(algo);
+
+				//SortingAlgorithm sort = factory.getSortingAlgorithm(algo);
 				// System.out.println("----------------------------------------------------");
-				// System.out.println("algorithm: " + algo);
+				//System.out.println("algorithm: " + algo);
 				System.out.print(algo + "\t");
 				// For each algorithm:
 				// a) Copy the array
@@ -201,7 +203,7 @@ public class Practice04Test {
 		
 		for (int size : sizes) {
 			timing.changeArraySize(size);
-			// timing.printStatus();
+			//timing.printStatus();
 			timing.printSortingTiming();
 			System.out.println("----------------------------------------------------");
 		}
